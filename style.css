@@ -47,9 +47,10 @@ ul li {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 .hero__main {
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,7 +58,7 @@ ul li {
 }
 .hero__banner {
   font-family: "Work Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 48px;
   text-align: center;
   color: #4758d6;
@@ -72,7 +73,7 @@ ul li {
   height: 50px;
   background-color: #ea3a3a;
   color: white;
-  padding: 10px 20px;
+  /* padding: 20px 20px; */
   border-radius: 50px;
   margin-top: 20px;
   font-family: "PT Sans", sans-serif;
@@ -86,7 +87,7 @@ ul li {
   z-index: -100;
   right: 0;
   border-radius: 50%;
-  transform: translate(200px, -850px);
+  transform: translate(200px, 30px);
   background: linear-gradient(
       rgba(255, 255, 255, 0.8),
       rgba(255, 255, 255, 0.8)
@@ -95,6 +96,7 @@ ul li {
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .date-picker {
@@ -109,8 +111,45 @@ ul li {
 .second__main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background: white;
-  height: 700px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.8),
+    rgba(255, 255, 255, 0.8)
+  );
+  overflow: hidden;
+}
+
+.second__main h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+  color: #4758d6;
+  margin: 40px 0px 0px 0px;
+}
+
+.second__main h3 {
+  margin: 10px;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 24px;
+  text-align: center;
+  color: #ea3a3a;
+}
+
+.listing__box {
+  display: grid;
+  margin: 40px;
+  background-color: #4758d6;
+  width: 1104px;
+  height: 782px;
+  border-radius: 0px 100px 0px 100px;
+}
+
+.imagebackground {
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  transform: translate(800px, -500px);
+  z-index: -10;
 }
