@@ -65,7 +65,7 @@ ul li {
   margin: 0 auto;
 }
 
-.hero__cta {
+.btn {
   background: none;
   border-style: none;
   outline-style: none;
@@ -118,6 +118,7 @@ ul li {
     rgba(255, 255, 255, 0.8)
   );
   overflow: hidden;
+  position: relative;
 }
 
 .second__main h1 {
@@ -140,16 +141,32 @@ ul li {
 .listing__box {
   display: grid;
   margin: 40px;
-  background-color: #4758d6;
-  width: 1104px;
-  height: 782px;
+  background: linear-gradient(
+    to right bottom,
+    rgba(71, 88, 214, 0.3),
+    rgba(71, 88, 214, 0.3)
+  );
+  width: 960px;
+  height: 680px;
   border-radius: 0px 100px 0px 100px;
+  backdrop-filter: blur(2px);
+  /* background: #fff; */
+  z-index: 2;
+}
+
+.imagebackground1 {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  transform: translate(100px, 20px);
+  overflow: hidden;
+  z-index: 1;
 }
 
 .imagebackground {
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 400px;
   position: absolute;
-  transform: translate(800px, -500px);
-  z-index: -10;
+  transform: translate(900px, -400px);
+  overflow: hidden;
 }
